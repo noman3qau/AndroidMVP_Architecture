@@ -18,7 +18,7 @@
 
 package com.noman.mvp.Login;
 
-public interface LoginInteractor {
+public interface LoginModel {
 
     interface OnLoginFinishedListener {
         void onUsernameError();

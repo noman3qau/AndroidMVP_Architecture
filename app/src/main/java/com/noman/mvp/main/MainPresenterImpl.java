@@ -20,12 +20,12 @@ package com.noman.mvp.main;
 
 import java.util.List;
 
-public class MainPresenterImpl implements MainPresenter, FindItemsInteractor.OnFinishedListener {
+public class MainPresenterImpl implements MainPresenter, FindItemsModel.OnFinishedListener {
 
     private MainView mainView;
-    private FindItemsInteractor findItemsInteractor;
+    private FindItemsModel findItemsInteractor;
 
-    public MainPresenterImpl(MainView mainView, FindItemsInteractor findItemsInteractor) {
+    public MainPresenterImpl(MainView mainView, FindItemsModel findItemsInteractor) {
         this.mainView = mainView;
         this.findItemsInteractor = findItemsInteractor;
     }

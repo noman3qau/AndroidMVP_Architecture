@@ -20,7 +20,7 @@ package com.noman.mvp.main;
 
 import java.util.List;
 
-public interface FindItemsInteractor {
+public interface FindItemsModel {
 
     interface OnFinishedListener {
         void onFinished(List<String> items);

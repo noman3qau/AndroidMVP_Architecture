@@ -18,14 +18,14 @@
 
 package com.noman.mvp.Login;
 
-public class LoginPresenterImpl implements LoginPresenter, LoginInteractor.OnLoginFinishedListener {
+public class LoginPresenterImpl implements LoginPresenter, LoginModel.OnLoginFinishedListener {
 
     private LoginView loginView;
-    private LoginInteractor loginInteractor;
+    private LoginModel loginInteractor;
 
     public LoginPresenterImpl(LoginView loginView) {
         this.loginView = loginView;
-        this.loginInteractor = new LoginInteractorImpl();
+        this.loginInteractor = new LoginModelImpl();
     }
 
     @Override
